@@ -42,17 +42,19 @@ body{
 }
 
 #social_links{
+    position: sticky;
     display: flex;
     font-family: 'Space Mono', monospace;
     color: #e4e4e4;
     width: 5.2vw;
     font-weight: 700;
+    margin-right: 4%;
     margin-left: auto;
+    justify-content: right;
 }
 
 .icon{
     height: 3vh;
-    margin-left: 1vw;
 }
 
 #linkedin, #github{
@@ -75,18 +77,21 @@ body{
     letter-spacing: -0.4vw;
     line-height: 95%;
     margin-top: 25vh;
-    width: 70%;
+    max-width: min(880px, 100%);
+    margin-right: 10vh;
 }
 
 #hero_subheading{
     font-family: 'Space Grotesk';
     font-weight: 300;
     margin-top: 8vh;
-    width: 45%;
+    margin-right: 10vw;
+    max-width: min(650px, 100%);
     color: #B3B3B3;
     line-height: 145%;
     font-size: calc(14px + 0.22vw);
     letter-spacing: -0.06vw;
+    overflow-x: auto;
 }
 
 #skillset{
@@ -286,7 +291,9 @@ body{
 
 #footer{
     display: block;
-    margin-top: 20vh;
+    padding-bottom: 5vh;
+    font-size: calc(14px + 0.2vw);
+    margin-top: 30vh;
 }
 
 #footnotes{
@@ -294,6 +301,8 @@ body{
     font-weight: 300;
     color: #B3B3B3;
     float: left;
+    
+    
 }
 
 #update{
