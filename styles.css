@@ -2,7 +2,13 @@
 
 body{
     background-color: #171717;
-    margin-top: 25px;
+    background: url("img/bg.png") no-repeat top center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    scroll-behavior: smooth;
+    margin-top: -10px;
     margin-bottom: 30px;
     margin-left: 6.3vw;
     margin-right: 6.3vw;
@@ -10,9 +16,22 @@ body{
 }
 
 #header{
+    position: fixed;
     display: flex;
     padding: 20px;
     padding-top: 30px;
+    margin-top: 20px;;
+    z-index:1;
+    width: 85vw;
+}
+
+#header_bg{
+    position: fixed;
+    margin-left: -50%;
+    height:20vh;
+    width: 200%;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(23,23,23,1) 4%, rgba(23,23,23,0) 100%);
 }
 
 #logo{
@@ -42,7 +61,7 @@ body{
     margin: 10px;
 }
 
-#front_heading{
+#hero_heading{
     font-family: 'Space Mono';
     color: #e4e4e4;
     font-weight: 700;
@@ -50,11 +69,11 @@ body{
     word-spacing: -3vw;
     letter-spacing: -0.4vw;
     line-height: 95%;
-    margin-top: 13vh;
+    margin-top: 25vh;
     width: 70%;
 }
 
-#front_subheading{
+#hero_subheading{
     font-family: 'Space Grotesk';
     font-weight: 300;
     margin-top: 8vh;
