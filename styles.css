@@ -149,7 +149,7 @@ body{
     padding-bottom: 3vh;
     padding-right: calc(30px + 20vw);
     word-wrap: break-word;
-    background: linear-gradient(90deg, rgba(23,23,23,1) 18%, rgba(23,23,23,0) 100%);
+    background: linear-gradient(90deg, rgba(23,23,23,1) 20%, rgba(23,23,23,0.5971638655462185) 80%, rgba(23,23,23,0.20780812324929976) 100%);
     
 }
 
