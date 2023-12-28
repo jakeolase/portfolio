@@ -169,35 +169,39 @@ body{
     font-family: 'Space Grotesk';
     color: #171717;
     font-weight: 800;
-    font-size: calc(12px + 0.1vw);
+    font-size: calc(8px + 0.2vw);
     line-height: 180%;
     background-color: #838383;
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 3px;
+    padding-bottom: 3px;
     border-radius: 6px;
-    margin-right: 10px;
+    margin-right: 0.2vw;
+    white-space: nowrap;
 }
 
 .other_tag{
     font-family: 'Space Grotesk';
     color: #b1b1b1;
     font-weight: 800;
-    font-size: calc(12px + 0.1vw);
+    font-size: calc(8px + 0.2vw);
     line-height: 180%;
     background-color: #2d2d2d;
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 3px;
+    padding-bottom: 3px;
     border-radius: 6px;
-    margin-right: 10px;
+    margin-right: 0.2vw;
+    white-space: nowrap;
 }
 
 .description{
     font-family: 'Space Grotesk';
     color: #e4e4e4;
     font-weight: 300;
-    font-size: calc(18px + 0.1vw);
+    font-size: calc(14px + 0.2vw);
     line-height: (20px + 0.1vw);
     height: 50%;
     overflow-y: scroll;
@@ -276,12 +280,26 @@ body{
 .con_icon{
     margin-top: 7vh;
     height: 5vh;
-    margin-right: 3vw;
+    margin-right: 1.5vw;
+    margin-left: 1.5vw;
 }
 
 #footer{
-    margin-top: 20vh;
     display: block;
-    border: 1px solid white;
-    min-height: 50vh;
+    margin-top: 20vh;
+}
+
+#footnotes{
+    font-family: 'Space Grotesk';
+    font-weight: 300;
+    color: #B3B3B3;
+    float: left;
+}
+
+#update{
+    font-family: 'Space Grotesk';
+    font-weight: 300;
+    color: #B3B3B3;
+    margin-right: auto;
+    float: right;
 }
