@@ -100,6 +100,7 @@ body{
     font-size: calc(18px + 2vw);
     margin-top: 10px;
     margin-bottom: 20px;
+    z-index: 3;
 }
 
 .section_subheading{
@@ -127,4 +128,117 @@ body{
     padding: 10px;
     width: 8vw;
     margin: 20px;
+}
+
+#projects{
+    text-align: center;
+    margin-top: 12vh;
+}
+
+
+.project_section{
+    position: relative;
+    display: block;
+    border: 1px solid #b3b3b3;
+    border-radius: 25px;
+    min-height: 50vh;
+    margin-top: 30px;
+    text-align: left;
+    padding-left: calc(20px + 2vw);
+    padding-top: 4vh;
+    padding-bottom: 3vh;
+    padding-right: calc(30px + 20vw);
+    word-wrap: break-word;
+    background: linear-gradient(90deg, rgba(23,23,23,1) 18%, rgba(23,23,23,0) 100%);
+    
+}
+
+.tags{
+    display: in4;
+    width: inherit;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.main_tag{
+    font-family: 'Space Grotesk';
+    color: #171717;
+    font-weight: 800;
+    font-size: calc(12px + 0.1vw);
+    line-height: 180%;
+    background-color: #838383;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.other_tag{
+    font-family: 'Space Grotesk';
+    color: #b1b1b1;
+    font-weight: 800;
+    font-size: calc(12px + 0.1vw);
+    line-height: 180%;
+    background-color: #2d2d2d;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.description{
+    font-family: 'Space Grotesk';
+    color: #e4e4e4;
+    font-weight: 300;
+    font-size: calc(18px + 0.1vw);
+    margin-top: 30px;
+    line-height: (20px + 0.1vw);
+    height: 50%;
+    overflow-y: visible;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.buttons{
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 3vh;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.button_project{
+    position: relative;
+    box-sizing: border-box;
+    width: 150px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #17171700;
+    border: 1px solid #b1b1b1;
+    color: #b1b1b1;
+    font-family: 'Space Grotesk';
+    color: #e4e4e4;
+    font-weight: 300;
+    font-size: calc(18px + 0.1vw);
+    margin-top: 10px;
+}
+
+.project_img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 25px;
+    min-height: 50vh;
+    filter: grayscale();
+    z-index: 1;
+}
+
+.grain_img{
+    background: url("img/grainy.png") right center;
+    background-size: cover;
+    border-radius: 25px;
+    min-height: 30vh;
+    z-index: 2;
 }
