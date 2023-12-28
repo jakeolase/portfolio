@@ -242,3 +242,21 @@ body{
     min-height: 30vh;
     z-index: 2;
 }
+
+#contact{
+    text-align: center;
+    display: block;
+    margin-top: 20vh;
+}
+
+#contact_links{
+    
+    display: flex;
+}
+
+#footer{
+    margin-top: 20vh;
+    display: block;
+    border: 1px solid white;
+    min-height: 50vh;
+}
