@@ -50,6 +50,11 @@ body{
     margin-left: auto;
 }
 
+.icon{
+    height: 3vh;
+    margin-left: 1vw;
+}
+
 #linkedin, #github{
     margin: 0px;
 }
@@ -125,9 +130,9 @@ body{
 }
 
 .tech_logo{
-    padding: 10px;
-    width: 8vw;
-    margin: 20px;
+    padding: 2vh;
+    width: calc(24px + 7vw);
+    margin: 2vh;
 }
 
 #projects{
@@ -193,13 +198,25 @@ body{
     color: #e4e4e4;
     font-weight: 300;
     font-size: calc(18px + 0.1vw);
-    margin-top: 30px;
     line-height: (20px + 0.1vw);
     height: 50%;
-    overflow-y: visible;
+    overflow-y: scroll;
     box-sizing: border-box;
     z-index: 3;
+    max-height: 40vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+
+.description::-webkit-scrollbar {
+    display: none;
+  }
+  
+.description {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    mask-image: linear-gradient(to bottom, transparent 0%, black 30px, black calc(100% - 30px), transparent 100%);
+  }
 
 .buttons{
     position: relative;
@@ -250,8 +267,16 @@ body{
 }
 
 #contact_links{
-    
-    display: flex;
+    display: flexbox;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.con_icon{
+    margin-top: 7vh;
+    height: 5vh;
+    margin-right: 3vw;
 }
 
 #footer{
