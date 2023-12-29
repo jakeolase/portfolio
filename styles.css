@@ -80,7 +80,13 @@ body{
 
 .icon{
     height: 3vh;
+    filter: brightness(0) saturate(100%) invert(99%) sepia(2%) saturate(408%) hue-rotate(212deg) brightness(113%) contrast(100%);
 }
+
+.icon:hover{
+    filter: none;
+}
+
 
 #linkedin, #github{
     margin: 0px;
@@ -321,6 +327,11 @@ body{
     height: 5vh;
     margin-right: 1.5vw;
     margin-left: 1.5vw;
+    filter: brightness(0) saturate(100%) invert(99%) sepia(2%) saturate(408%) hue-rotate(212deg) brightness(113%) contrast(100%);
+}
+
+.con_icon:hover{
+    filter: none;
 }
 
 #footer{
