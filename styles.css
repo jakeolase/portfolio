@@ -2,17 +2,42 @@
 
 body{
     background-color: #171717;
-    background: url("img/bg.png") no-repeat top center; 
+    margin: 0px;
+    color: #e4e4e4;
+}
+
+#bg{
+    background-image: url("img/bgtr.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     scroll-behavior: smooth;
+}
+
+#container{
     margin-top: -10px;
-    margin-bottom: 30px;
     margin-left: 6.3vw;
     margin-right: 6.3vw;
-    color: #e4e4e4;
+    margin-bottom: -10vh;
+}
+
+.blob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 700px;
+    border-radius: 100%;
+    background-image: radial-gradient(#3d3d3d 10%, #171717);
+    filter: blur(100px);
+    transition: all 450ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: -1;
 }
 
 #header{
@@ -61,7 +86,7 @@ body{
     margin: 0px;
 }
 
-#container{
+#hero_container{
     display: grid;
     width: 85vw;
     padding: 10px;
@@ -294,6 +319,7 @@ body{
     padding-bottom: 5vh;
     font-size: calc(14px + 0.2vw);
     margin-top: 30vh;
+    margin-bottom: 5vh;
 }
 
 #footnotes{
