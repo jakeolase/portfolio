@@ -7,7 +7,7 @@ body{
 }
 
 #bg{
-    background-image: url("img/bgtr.png");
+    background: url("img/bgtr.png") top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -29,7 +29,7 @@ body{
     width: 700px;
     height: 700px;
     border-radius: 100%;
-    background-image: radial-gradient(#3d3d3d 10%, #171717);
+    background-image: radial-gradient(#434343 10%, #171717);
     filter: blur(100px);
     transition: all 450ms ease-out;
     position: fixed;
@@ -163,7 +163,16 @@ body{
     padding: 2vh;
     width: calc(24px + 7vw);
     margin: 2vh;
+    filter: brightness(0) saturate(100%) invert(38%) sepia(0%) saturate(0%) hue-rotate(326deg) brightness(97%) contrast(88%);
+    transition: 0.1s ease-in;
 }
+
+.tech_logo:hover{
+    filter: none;
+    transform: scale(1.1);
+    transition: 0.1s ease-out;
+}
+
 
 #projects{
     text-align: center;
