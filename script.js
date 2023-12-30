@@ -55,9 +55,9 @@ const skills = [
   'python',
   'java',
 ].map(s => `${s}.`);
-const delay = 15;
+const delay = 50;
 const step = 1;
-const tail = 2;
+const tail = 4;
 const timeout = 50;
 
 // Select the existing label element by ID
@@ -65,6 +65,8 @@ const heroHeading = document.getElementById('hero_heading');
 
 const colors = [
   '#b1b1b1',
+  '#7c7c7c',
+  '#4c4c4c',
 ];
 
 function getRandomColor() {

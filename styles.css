@@ -157,7 +157,7 @@ body{
     font-weight: 300;
     margin-top: 8vh;
     margin-right: 10vw;
-    max-width: min(650px, 100%);
+    max-width: min(600px, 100%);
     color: #B3B3B3;
     line-height: 145%;
     font-size: calc(14px + 0.22vw);
