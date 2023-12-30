@@ -7,7 +7,7 @@ body{
 }
 
 #bg{
-    background: url("img/bgtr.png") top center;
+    background: url("img/bggrain.png") top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -29,7 +29,7 @@ body{
     width: 700px;
     height: 700px;
     border-radius: 100%;
-    background-image: radial-gradient(#434343 10%, #171717);
+    background-image: radial-gradient(#6c6c6c 10%, #171717);
     filter: blur(100px);
     transition: all 450ms ease-out;
     position: fixed;
@@ -170,13 +170,12 @@ body{
     width: calc(24px + 7vw);
     margin: 2vh;
     filter: brightness(0) saturate(100%) invert(38%) sepia(0%) saturate(0%) hue-rotate(326deg) brightness(97%) contrast(88%);
-    transition: 0.1s ease-in;
+    transition: 0.3s ease-in;
 }
 
 .tech_logo:hover{
     filter: none;
-    transform: scale(1.1);
-    transition: 0.1s ease-out;
+    transition: 0.3s ease-out;
 }
 
 
@@ -200,6 +199,7 @@ body{
     padding-right: calc(30px + 20vw);
     word-wrap: break-word;
     background: linear-gradient(90deg, rgba(23,23,23,1) 20%, rgba(23,23,23,0.5971638655462185) 80%, rgba(23,23,23,0.20780812324929976) 100%);
+    transition: 0.3s ease-in-out;
     
 }
 
@@ -244,7 +244,6 @@ body{
 
 .description{
     font-family: 'Space Grotesk';
-    color: #e4e4e4;
     font-weight: 300;
     font-size: calc(14px + 0.2vw);
     line-height: (20px + 0.1vw);
@@ -295,10 +294,17 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
+    color: #e4e4e4;
     border-radius: 25px;
     min-height: 50vh;
     filter: grayscale();
     z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.project_img:hover{
+    filter: none;
+    transform: scale(1.01);
 }
 
 .grain_img{
