@@ -93,23 +93,27 @@ body{
 }
 
 #hero_container{
-    display: grid;
+    display: block;
     width: 85vw;
     padding: 10px;
     margin: 10px;
 }
 
+#fixed_heading{
+    height: 43vh;
+    margin-top: 25vh;
+    max-width: min(890px, 100%);
+}
 #hero_heading{
     font-family: 'Space Mono';
     color: #e4e4e4;
     font-weight: 700;
     font-size: calc(24px + 5vw);
-    word-spacing: -3vw;
+    word-spacing: -2vw;
     letter-spacing: -0.4vw;
     line-height: 95%;
-    margin-top: 25vh;
-    max-width: min(880px, 100%);
     margin-right: 10vh;
+
 }
 
 #hero_subheading{
@@ -122,7 +126,6 @@ body{
     line-height: 145%;
     font-size: calc(14px + 0.22vw);
     letter-spacing: -0.06vw;
-    overflow-x: auto;
 }
 
 #skillset{
@@ -276,19 +279,30 @@ body{
 
 .button_project{
     position: relative;
-    box-sizing: border-box;
-    width: 150px;
-    height: 50px;
-    border-radius: 100px;
     background-color: #17171700;
+    font-size: calc(18px + 0.1vw);
     border: 1px solid #b1b1b1;
+    border-radius: 100px;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 150px;
+    outline: none;
+    overflow: hidden;
+    height: 50px;
     color: #b1b1b1;
     font-family: 'Space Grotesk';
-    color: #e4e4e4;
     font-weight: 300;
-    font-size: calc(18px + 0.1vw);
     margin-top: 10px;
+    text-shadow: 0 0 5em rgba(0,0,0,100);
+    transition: 0.3s ease-in-out;
 }
+
+.button_project:hover{
+    background-color: #b1b1b1;
+    font-weight: 500;
+    color: #171717;
+}
+
 
 .project_img{
     background-size: cover;
