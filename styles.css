@@ -292,7 +292,36 @@ body{
     z-index: 3;
     max-height: 40vh;
     padding-top: 30px;
+    text-align: justify;
     padding-bottom: 30px;
+}
+
+@media (min-width:1200px) {
+    .description{
+        font-family: 'Space Grotesk';
+        font-weight: 300;
+        font-size: calc(14px + 0.2vw);
+        line-height: (20px + 0.1vw);
+        height: 50%;
+        overflow-y: scroll;
+        box-sizing: border-box;
+        z-index: 3;
+        max-height: 40vh;
+        width: 40vw;
+        padding-top: 30px;
+        text-align: justify;
+        padding-bottom: 30px;
+    }
+
+    .description::-webkit-scrollbar {
+        display: none;
+      }
+      
+    .description {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        mask-image: linear-gradient(to bottom, transparent 0%, black 30px, black calc(100% - 30px), transparent 100%);
+      }
 }
 
 .description::-webkit-scrollbar {
