@@ -99,6 +99,21 @@ body{
     justify-content: right;
 }
 
+@media (max-width: 600px){
+#social_links{
+    position: sticky;
+    display: flex;
+    font-family: 'Space Mono', monospace;
+    color: #e4e4e4;
+    width: 5.2vw;
+    font-weight: 700;
+    margin-right: 10%;
+    margin-left: auto;
+    justify-content: right;
+}
+
+}
+
 .icon{
     height: 3vh;
     filter: brightness(0) saturate(100%) invert(99%) sepia(2%) saturate(408%) hue-rotate(212deg) brightness(113%) contrast(100%);
@@ -379,11 +394,12 @@ body{
     filter: grayscale();
     z-index: 1;
     transition: 0.3s ease-in-out;
+    transform: scale(0.9);
 }
 
 .project_img:hover{
     filter: none;
-    transform: scale(1.01);
+    transform: scale(0.92);
 }
 
 .grain_img{

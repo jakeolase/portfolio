@@ -18,32 +18,31 @@ document.addEventListener('mousemove', moveCursor);
 document.addEventListener('touchmove', moveCursor);
 
 //Project Div Emphasis on Scroll
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const projectImages = document.querySelectorAll(".project_img");
 
   const options = {
-    threshold: 0.85,
+    threshold: 0.5
   };
 
   const observer = new IntersectionObserver(handleIntersect, options);
 
-  projectImages.forEach(img => {
+  projectImages.forEach((img) => {
     observer.observe(img);
   });
 
   function handleIntersect(entries, observer) {
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.style.filter = "none";
-        entry.target.style.transform = "scale(1.02)";
+        entry.target.style.transform = "scale(1)";
       } else {
         entry.target.style.filter = "grayscale()";
-        entry.target.style.transform = "scale(0.95)";
+        entry.target.style.transform = "scale(0.98)";
       }
     });
   }
 });
-
 //Text Animation for hero_heading text.
 const prefix = '<jake> of all trades, master of ';
 const skills = [
