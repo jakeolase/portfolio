@@ -17,12 +17,12 @@ function moveCursor(e) {
 document.addEventListener('mousemove', moveCursor);
 document.addEventListener('touchmove', moveCursor);
 
-
+//Project Div Emphasis on Scroll
 document.addEventListener("DOMContentLoaded", function() {
   const projectImages = document.querySelectorAll(".project_img");
 
   const options = {
-    threshold: 0.8,
+    threshold: 0.90,
   };
 
   const observer = new IntersectionObserver(handleIntersect, options);
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.style.filter = "none";
-        entry.target.style.transform = "scale(1.0)";
+        entry.target.style.transform = "scale(1.02)";
       } else {
         entry.target.style.filter = "grayscale()";
         entry.target.style.transform = "scale(0.95)";
@@ -44,12 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-
-
-
-
-
-
+//Text Animation for hero_heading text.
 const prefix = '<jake> of all trades, master of ';
 const skills = [
   'more than one',

@@ -40,6 +40,27 @@ body{
     z-index: -1;
 }
 
+@media (max-width: 700px) {
+    .blob {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 350px;
+        border-radius: 100%;
+        background-image: radial-gradient(#6c6c6c 10%, #171717);
+        filter: blur(100px);
+        transition: all 450ms ease-out;
+        position: fixed;
+        pointer-events: none;
+        left: 0;
+        top: 0;
+        transform: translate(calc(-50% + 15px), -50%);
+        z-index: -1;
+    }
+  }
+
+
 #header{
     position: fixed;
     display: flex;
@@ -102,8 +123,23 @@ body{
 #fixed_heading{
     height: 43vh;
     margin-top: 25vh;
-    max-width: min(890px, 100%);
+    max-width: min(890px, 90%);
+    display:block;                   
+    overflow:hidden;       
+    padding-bottom:24px;   
 }
+
+@media (max-width: 1200px) {
+    #fixed_heading{
+        height: 25vh;
+        margin-top: 25vh;
+        max-width: min(890px, 90%);
+        display:block;                   
+        overflow:hidden;       
+        padding-bottom:12px;   
+    }
+  }
+
 #hero_heading{
     font-family: 'Space Mono';
     color: #e4e4e4;
