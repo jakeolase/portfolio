@@ -48,13 +48,12 @@ const prefix = '<jake> of all trades, master of ';
 const skills = [
   'more than one',
   'creativity',
-  'logic',
   'html and css',
   'javascript',
   'python',
   'java',
 ].map(s => `${s}.`);
-const delay = 50;
+const delay = 30;
 const step = 1;
 const tail = 4;
 const timeout = 50;
