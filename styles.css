@@ -30,7 +30,7 @@ body{
     width: 700px;
     height: 700px;
     border-radius: 100%;
-    background-image: radial-gradient(#5E5E5F 10%, #171717);
+    background-image: radial-gradient(#6c6c6c 10%, #171717);
     filter: blur(100px);
     transition: all 450ms ease-out;
     position: fixed;
@@ -49,7 +49,7 @@ body{
         width: 350px;
         height: 350px;
         border-radius: 100%;
-        background-image: radial-gradient(#5E5E5F 10%, #171717);
+        background-image: radial-gradient(#6c6c6c 10%, #171717);
         filter: blur(100px);
         transition: all 450ms ease-out;
         position: fixed;
