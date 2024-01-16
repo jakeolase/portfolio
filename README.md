@@ -30,4 +30,4 @@ Simplicity and Conciseness is the goal of the project, with emphasis on projects
 - This website is currently deployed. Visit [jake-olase.vercel.app](https://jake-olase.vercel.app/)
 
 ## License
-This project is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). That is, you are allowed to download and share this project as long as the project is credited. **However**, modification for personal or commercial use is prohibited. 
+This project is licensed under [Creative Commons Attribution-NonCommercial-NoDerivs](https://creativecommons.org/licenses/by-nc-nd/4.0/). That is, you are allowed to download and share this project as long as the project is credited. **However**, modification for personal or commercial use is prohibited. 
