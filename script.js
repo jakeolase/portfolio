@@ -144,8 +144,3 @@ function render() {
 
 // Start the animation after a delay
 setTimeout(render, 500);
-
-
-function resume(){
-  alert("Wala pa aq resume, sa 2024 na. kain muna q happy new year!");
-}
