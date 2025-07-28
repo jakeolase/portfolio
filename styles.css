@@ -23,6 +23,15 @@ body{
     margin-bottom: -10vh;
 }
 
+@media (max-width: 1200px) {
+    #container{
+    margin-top: -10px;
+    margin-left: 6.3vw;
+    margin-right: 2.3vw;
+    margin-bottom: -10vh;
+    }
+}
+
 .blob {
     display: flex;
     justify-content: center;
@@ -137,7 +146,7 @@ body{
 }
 
 #fixed_heading{
-    height: 43vh;
+    height: 35vh;
     margin-top: 25vh;
     max-width: min(890px, 90%);
     display:block;                   
@@ -154,29 +163,52 @@ body{
         overflow:hidden;       
         padding-bottom:12px;   
     }
+
+#hero_heading{
+    font-family: 'Space Mono';
+    color: #e4e4e4;
+    font-weight: 700;
+    font-size: calc(24px + 4vw);
+    word-spacing: -2vw;
+    letter-spacing: -0.4vw;
+    line-height: 95%;
+    margin-right: 10vh;
+}
+
+#hero_subheading{
+    font-family: 'Space Grotesk';
+    font-weight: 300;
+    margin-top: 1vh;
+    margin-right: 10vw;
+    max-width: min(700px, 100%);
+    color: #B3B3B3;
+    line-height: 145%;
+    font-size: calc(18px + 1vw);
+    letter-spacing: -0.06vw;
+}
+
   }
 
 #hero_heading{
     font-family: 'Space Mono';
     color: #e4e4e4;
     font-weight: 700;
-    font-size: calc(24px + 5vw);
+    font-size: calc(24px + 4vw);
     word-spacing: -2vw;
     letter-spacing: -0.4vw;
     line-height: 95%;
     margin-right: 10vh;
-
 }
 
 #hero_subheading{
     font-family: 'Space Grotesk';
     font-weight: 300;
-    margin-top: 8vh;
+    margin-top: 1vh;
     margin-right: 10vw;
-    max-width: min(600px, 100%);
+    max-width: min(700px, 100%);
     color: #B3B3B3;
     line-height: 145%;
-    font-size: calc(14px + 0.22vw);
+    font-size: calc(8px + 0.5vw);
     letter-spacing: -0.06vw;
 }
 
@@ -237,8 +269,18 @@ body{
 #projects{
     text-align: center;
     margin-top: 12vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
+@media (max-width: 800px) {
+    #projects{
+    text-align: center;
+    margin-top: 12vh;
+    margin-left: -0.5vw;
+    margin-right: 1vw;
+    }
+}
 
 .project_section{
     position: relative;
